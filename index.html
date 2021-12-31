@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>The Portfolio of Ellie Marvin</title>
+    <meta name="author" content="ellie marvin">
+    <meta name="description" content="the graphic design portfolio of ellie marvin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <style>
+      @media screen and (max-width: 480px) {
+    div.column2 {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        line-height: 1rem;
+    }
+    
+    h3 {
+        font-size: .4rem;
+    }
+}
+    </style>
+  </head>
+  
+  
+<header>
+    <center><div class="header"><img src="images/logo-animated.gif" class="head" alt="triangle logo with loading animation" onmouseover="this.src='images/logo-animated.gif'"><h1>ellie marvin.</h1></div></center>
+    <div class="nav" id="navbar"><h3><a href="index.html">HOME</a> <a href="works.html">WORKS</a> <a href="about.html">ABOUT</a> <a href="contact.html">CONTACT</a></h3></div>
+</header>
+
+<body>
+  <div class="body">
+<div class="row"> 
+  <div class="column">
+    <a href="works.html#eng"><img src="images/mock1.png" style="width:100%" class="main"></a>
+    <a href="works.html#fash"><img src="images/fashion.jpg" style="width:100%" class="main"></a>
+    <a href="works.html#art"><img src="images/screencap.png" style="width:100%" class="main"></a>
+    <a href="works.html#tab"><img src="images/apptt.jpg" style="width:100%" class="main"></a>
+    <a href="works.html#fest"><img src="images/fest.png" style="width:100%" class="main"></a>
+  </div>
+  <div class="column">
+    <a href="works.html#concert"><img src="images/artists.png" style="width:100%" class="main"></a>
+    <a href="works.html#schap"><img src="images/schap.png" style="width:100%" class="main"></a>
+    <a href="works.html#gth"><img src="images/gallerytreasurehunt.png" style="width:100%" class="main"></a>
+    <a href="works.html#chill"><img src="images/chill.png" style="width:100%" class="main"></a>
+    <a href="works.html#sem"><img src="images/logo white bg.png" style="width:100%" class="main"></a>
+    <a href="works.html#book"><img src="images/discover.png" style="width:100%" class="main"></a>
+  </div>  
+  <div class="column">
+    <a href="works.html#buff"><img src="images/4.png" style="width:100%" class="main"></a>
+    <a href="works.html#grad"><img src="images/gradfr.png" style="width:100%" class="main"></a>
+    <a href="works.html#graph"><img src="images/gp1.png" style="width:100%" class="main"></a>
+    <a href="works.html#map"><img src="images/maplil.png" style="width:100%" class="main"></a>
+    <a href="works.html#snap"><img src="images/21snapcropped.png" style="width:100%" class="main"></a>
+    <a href="works.html#fairy"><img src="images/fairy godmother.png" style="width:100%" class="main"></a>
+  </div>
+  <div class="column">
+    <a href="works.html#icon"><img src="images/iconography2.png" style="width:100%" class="main"></a>
+    <a href="works.html#gats"><img src="images/gats.png" style="width:100%" class="main"></a>
+    <a href="works.html#gal"><img src="images/v4.png" style="width:100%" class="main"></a>
+    <a href="works.html#impact"><img src="images/imprep.png" style="width:100%" class="main"></a>
+    <a href="works.html#maui"><img src="images/maui_ice.png" style="width:100%" class="main"></a>
+    <a href="works.html#dali"><img src="images/screenshot.png" style="width:100%" class="main"></a>
+  </div>
+</div>
+  </div>
+
+  <!--stickynav js modified from w3schools-->
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+
+<footer>
+  <center><h4>content &copy; ellie marvin</h4>
+  <img src="images/logo-animated_white_small.gif" width="150px" alt="gold triangle logo with shining animation"><br><br></center>
+</footer>
+</html>

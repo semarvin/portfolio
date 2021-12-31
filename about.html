@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>The Portfolio of Ellie Marvin</title>
+    <meta name="author" content="ellie marvin">
+    <meta name="description" content="the graphic design portfolio of ellie marvin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+        <style>
+      @media screen and (max-width: 480px) {
+    div.column2 {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        line-height: 1rem;
+    }
+    
+    h3 {
+        font-size: .4rem;
+    }
+}
+    </style>
+  </head>
+  
+  
+<header>
+    <center><div class="header"><img src="images/logo-animated.gif" class="head" alt="triangle logo with loading animation" onmouseover="this.src='images/logo-animated.gif'"></div>
+    <div class="header"><h1>ellie marvin.</h1></div></center>
+    <div class="nav" id="navbar"><h3><a href="index.html">HOME</a> <a href="works.html">WORKS</a> <a href="about.html">ABOUT</a> <a href="contact.html">CONTACT</a></h3></div>
+</header>
+
+<body>
+  <div class="body2">
+    <h2>about me</h2>
+    <p>I am currently a graduate student at <a href="https://www.fsu.edu//">Florida State University</a> working on my MA in <a href="http://pih.fsu.edu/graduate-digital-humanities/what-are-digital-humanities">Digital Humanities</a>. In May of 2019, I earned my BA from FSU. I double majored in English and Humanities with a minor in Film Studies. My interests and hobbies include writing, editing, graphic design, art, photography, and film. My most recent experience in graphic design is my internship at <a href="https://thedali.org/">The Dali Museum</a> in St. Petersburg, Florida during the summer of 2017. I have completed a handful of projects since then, as my class schedule has taken up most of my time. Please navigate to my <a href="contact.html">contact page</a> to reach me and discuss potential projects. I am currently based out of Tallahassee and am open to working remotely.<br><br>
+    <center><img src="images/itme.png" alt="a photo of ellie" width="50%">
+  </div>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+
+<footer>
+  <center><h4>content &copy; ellie marvin</h4>
+  <img src="images/logo-animated_white_small.gif" width="150px" alt="gold triangle logo with shining animation"><br><br></center>
+</footer>
+</html>
