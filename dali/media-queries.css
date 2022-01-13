@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* CSS by Suzi Marvin */
+
+/* window widths smaller than 1060px - the original container size + margins */
+@media screen and (max-width: 1060px) {
+	
+	/* switch from static 960px container to a fluid 90% container at smaller display sizes */
+	.container {
+		width: 90%;
+	}
+
+	/* adjust button left and right padding so buttons don't wrap to 2nd row on smaller displays */
+	ul#menu li a.button {
+		padding: 50px 70px; 
+	}
+	
+	#navbar{
+		width: 1060px;
+	}
+	
+	/* force embedded youtube video to shrink width with display size */
+	/* can't do anything about height */
+	iframe {
+       width: 80%;
+	}
+	
+	/* shrink splash area for smaller displays */
+	#splash {
+		height: 530px;
+		background-size: 1060px;
+	}	
+	
+	/* keep the title from being pushed down off the display */
+
+	#title-page {
+  		font-family: 'Homemade Apple', cursive;
+  		font-size: 12px;
+        text-align: left;
+		padding-top: 250px;
+		padding-left: 10px;
+	}
+	
+	#title-page h3{
+  		font-family: 'Homemade Apple', cursive;
+        text-align: left;
+		padding-left: 500px;
+	}
+    
+    #splash img{
+		margin: 0;
+	}
+	/* always use default font sizes for mobile devices */ 
+	/* this cancels the 14 px font in style.css */
+	p {
+		font-size: 1em; 
+	}
+	
+	hr{
+		width: 1060px;
+	}
+	
+	body{
+		overflow-x: hidden;
+		max-width: 1060px;
+	}
+	
+}
+
+/* window widths smaller than 760px - tablets */
+@media screen and (max-width: 767px) {
+	
+	/* adjust button left and right padding so buttons don't wrap to 2nd row on smaller displays */
+	ul#menu li a.button {
+		padding: 20px 32px;
+	}
+	
+	body{
+		overflow-x: hidden;
+		max-width: 767px;
+	}
+    
+    #navbar{
+        width: 767px;
+		height: 32px;
+		font-size: 13px;
+    }
+	
+	/* make images 100% width to avoid awkward text wrapping */
+	img{
+		width: 50%;
+		height: auto;
+		margin-right: 50%;
+	}
+	
+	p{
+		font-size: .9em;
+	}
+	
+	iframe {
+       width: 60%;
+	   padding-right: 200px;
+	}
+	
+	table{
+		margin-left: 25px;
+	}
+	
+	#media h2{
+		margin-left: -200px;
+	}
+	
+	#media h3{
+		margin-left: -200px;
+	}
+	
+	hr{
+		width: 767px;
+	}
+	
+	.colors{
+		height: 70%;
+		width: 30%;
+	}
+	
+	
+	/* keep image in footer credits from adopting 100% width */
+	#footer img{
+  		width: 90px;
+		margin-right: 170px;
+    }
+	
+	/* shrink splash area for smaller displays */
+	#splash {
+		height: 370px;
+		background-size: 767px;
+	}	
+	
+	/* keep the title from being pushed down off the display */
+	#title-page{
+  		padding-top: 70px; 
+	}
+	#title-page h1 {
+  		font-family: 'Homemade Apple', cursive;
+  		font-size: 40px; 	
+	}
+	#title-page h3 {
+  		font-family: 'Homemade Apple', cursive;
+  		font-size: 20px;	
+	}
+}
+
+/* window widths smaller than 480px - smartphones */
+@media screen and (max-width: 480px) {
+	
+	#navbar{
+		width: 480px;
+	}
+	/* adjust button font size and left and right padding so buttons don't wrap to 2nd row on smaller displays */
+	ul#menu li a.button {
+		font-size: 1em;
+		padding: 20px 10px; 
+	}
+	
+	html, body{
+		overflow-x: hidden;
+		max-width: 480px;
+		width: 100%;
+	}
+	
+	/* shrink splash area for smaller displays */
+	#splash {
+		height: 230px;
+		background-size: 480px;
+	}
+	
+	/* keep the title from being pushed down off the display */	
+	#title-page{
+  		padding-top: 40px; 
+	}
+	#title-page h1 {
+  		font-family: 'Homemade Apple', cursive;
+  		font-size: 25px;
+	}
+	
+	#title-page h3{
+		font-size: 15px;
+		padding-left: 250px;
+	}
+	
+	#title-page img {
+		height: 0;
+		visibility:hidden;
+		padding: 0;
+	}
+	
+	iframe {
+       width: 25%;
+	   padding: 0;
+	   margin: 0;
+	   margin-right: 900px;
+	}
+	
+	table{
+		margin-left: 0px;
+		padding-left: 0px;
+		width: 100%;
+	}
+	
+	hr{
+		width: 480px;
+	}
+	
+	#media h2{
+		margin-left: -500px;
+	}
+	
+	#media h3{
+		margin-left: -500px;
+	}
+	
+	
+	#footer img{
+		margin-left: 0;
+	}
+	
+	.colors{
+		height: 50%;
+		width: 50%;
+	}
+	
+	p {
+		font-size: 1em; 
+	}
+	
+}
+
+
+

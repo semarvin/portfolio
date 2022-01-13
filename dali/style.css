@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* CSS by Suzi Marvin */
+
+/*-----------BODY AND MAIN CONTENT------------*/
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e5a484;
+    background-image: url("images/texture.png");
+    background-attachment: fixed;
+    font-family: Times New Roman, Times, serif;
+    line-height: 1.6em;
+    color: #333333;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p{
+    font-size: .9em;
+    font-family: Helvetica, Tahoma, sans-serif;
+    line-height: 1.3em;
+}
+
+.container{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 900px;
+}
+
+.containercenter{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 900px;
+    align-content: center;
+    text-align: center;
+}
+
+ul{
+    padding: 0;
+    list-style-position: inside;
+    margin-left: 60px;
+    line-height: 1.2em;
+    font-family: Helvetica, Tahoma, sans-serif;
+    font-size: .9em;
+}
+
+table{
+    line-height: 1.3em;
+    padding: 10px 600px 0 30px;
+    border-style: none;
+    width: 1200px;
+    font-family: Helvetica, Tahoma, sans-serif;
+    font-size: .9em;
+    margin: 0 auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+}
+
+/*---table colored lines----*/
+tr:nth-child(odd) {background-color: #f9d3c0}
+tr:nth-child(even) {background-color: #F9F4E7}
+
+.colors{
+    width: 18%;
+    height: 70%;
+    padding: 0;
+    float: center;
+    margin: auto;
+}
+
+/*----------TITLE PAGE STYLES--------------*/
+#title-page{
+  width: 100%;
+  padding-top: 600px; /* provides a lot of space to view the background image */
+  padding-left: 300px;
+  color: #fff;
+  text-align: right;
+}
+#title-page h1 {
+    margin: 0;
+    text-align: right;
+    padding-bottom: 0;
+    color: #ed6c4b;
+    font-family: 'Homemade Apple', cursive;
+    letter-spacing: .01em;
+    line-height: 1.5em;
+    font-size: 5em;
+}
+#title-page h3 {
+    margin: 0;
+    text-align: right;
+    font-size: 2em;
+    color: #e5a484;
+    font-family: 'Homemade Apple', cursive;
+    letter-spacing: .05em;
+    line-height: 2em;
+}
+
+/*----------TEXT STYLES------------*/
+
+h1{
+    /*margin: 0;
+    text-align: right;
+    padding-bottom: 0;
+    color: #ed6c4b;
+    font-family: 'Homemade Apple', cursive;
+    letter-spacing: .01em;
+    line-height: 1.5em;
+    font-size: 5em;*/
+}
+
+h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #796769;
+    line-height: .2em;
+    margin-top: 10px;
+}
+
+h3{
+    padding: 0;
+    line-height: .2em;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #796769;
+    text-align: center;
+}
+
+.media{
+    padding-top: 10px;
+    color: #333;
+    line-height: .5em;
+}
+
+hr{
+    height: 3px;
+    border: 1px solid #F9F4E7;
+    width: 1900px;
+    background-image: linear-gradient(to right, rgba(216,174,119,0),rgba(216,174,119,.75),rgba(216,174,119,0));
+    margin: 0;
+    padding-top: 0;
+}
+
+blockquote{
+    margin: 0px;
+    width: 1200px;
+    padding: 0px;
+    color: #796769;
+    font-size: 1.3em;
+    font-family: Times New Roman, Times, serif;
+}
+
+footer{
+    margin: 0;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    color: #ffffff;
+    font-size: .7em;
+    font-family: Helvetica, Tahoma, sans-serif;
+    clear: both;
+}
+
+
+/*----------SECTION SYLES---------------*/
+#splash{
+    background: url(images/atomicus.png) no-repeat center top fixed;
+    background-size: cover;
+    height: 1000px;
+}
+
+#bio{
+    background-color: #f9d3c0;
+    padding: 10px;
+}
+
+#media{
+    background: url(images/texture.png) no-repeat center top fixed;
+    background-size: cover;
+    background-color: #F9F4E7;
+    padding: 10px;
+}
+
+#author{
+    background-color: #f9d3c0;
+    padding: 10px;
+}
+
+#footer{
+    background-color: #F9F4E7;
+    padding: 20px 0;
+}
+
+/*---------FOOTER DIVS & STYLES --------*/
+
+.footer{
+    padding: 10px;
+    clear: both;
+}
+
+.footer1{
+    clear: both;
+}
+
+.tinytext{
+    font-size: .7em;
+    line-height: 1em;
+    text-align: center;
+    padding: 0;
+}
+
+/*--------------SIDEBAR----------*/
+
+.sidebar{
+    background: rgba(229, 164, 132, 100);
+    width: 190px;
+    float: left;
+    margin-top: 50px;
+    padding: 10px;
+    font-family: Georgia;
+    text-align: right;
+    border: none;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px #333333;
+    overflow: hidden;
+}
+
+.sidebar a:link {color: #F9F4E7}
+.sidebar a:visited {color: #F9F4E7}
+.sidebar a:hover {color:#ed6c4b}
+.sidebar a:active {color: #F9F4E7}
+
+/*-------------END SIDEBAR----------*/
+
+img{
+    padding: 0;
+    margin: auto;
+    margin-left: 27%;
+    margin-right: 27%;
+}
+
+#space1{
+    padding-top: 10px;
+}
+
+.grayscale:hover {
+    filter: grayscale(100%);
+}
+
+/*tr:hover {background-color: #e5a484}*/
+
+/*----------LINKS---------*/
+a:link {
+    color: #ed6c4b;
+    text-decoration: none;
+}
+    
+a:visited {
+    color: #ed6c4b;
+    text-decoration: none;
+}
+    
+a:hover {
+    color: #796769;
+    text-decoration: none;
+}
+a:active {
+    color: #ed6c4b
+    }
