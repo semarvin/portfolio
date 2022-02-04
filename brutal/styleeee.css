@@ -1,0 +1,306 @@
+/*WRITTEN BY ELLIE MARVIN*/
+
+/* color scheme
+dark purple: #361134
+bright fuschia: #B0228C
+pink: #EA3788
+coral: #E56B70
+light pink: #F391A0
+*/
+
+/*div styles*/
+html, body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url("images/bar.png");
+    background-repeat: no-repeat;
+    cursor: url(cursor.png), auto;
+}
+
+.header {
+    text-align: center;
+    margin: 3%;
+    margin-top: 10%;
+    transform: skewX(20deg);
+    width: 100%;
+}
+
+.animlogo {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transform: skewY(18deg);
+}
+
+.about {
+    margin: 5%;
+}
+
+/*font styles*/
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: #361134;
+}
+
+h1 a {
+    background-color: #debffc;
+}
+
+h1 a:hover {
+    color: #B0228C;
+}
+
+h2 {
+    font-family: 'Press Start 2P', display;
+    font-size: 6rem;
+    line-height: 6rem;
+    text-align: center;
+}
+
+.flash {
+    animation:blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+    0%{     color: #DA70D6;    }
+    49%{    color: #DA70D6; }
+    60%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: #DA70D6;    }
+}
+
+h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3rem;
+    color: #361134; 
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #000;
+}
+
+p a {
+    color: #B0228C;
+    background-color: #debffc;
+    text-decoration: underline;
+    cursor: url(pointer.png), auto;
+}
+
+p a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: url(pointer.png), auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: url(pointer.png), auto;
+}
+
+::-moz-selection {
+    color: #361134;
+    background: #EA3788;
+}
+
+::selection {
+    color: #361134;
+    background: #EA3788;
+}
+
+/*img styles*/
+
+/*media queries*/
+@media screen and (max-width: 480px) {
+    .animlogo {
+        width: 5%;
+    }
+    
+    .animlogo img {
+        width: 250px;
+    }
+    
+    p {
+        font-size: .6rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    .welcome {
+        height: 50%;
+    }
+    
+    .zoom img {
+        width: 30%;
+    }
+    
+    html, body {
+        cursor: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .animlogo {
+        width: 0px;
+        margin-top: 0;
+    }
+    
+    .animlogo img {
+        width: 200px;
+    }
+    
+    p {
+        font-size: .9rem;
+    }
+    
+    h2 {
+       font-size: 6rem;
+       line-height: 5.8rem;
+    }
+    
+    .zoom img {
+        width: 55%;
+    }
+    
+    .zoom {
+        align-items: right;
+        margin-right: 0;
+        float: right;
+    }
+    
+    html, body {
+        cursor: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .animlogo img {
+        width: 500px;
+    }
+    
+    .animlogo {
+        width: 40%;
+    }
+    
+    h2 {
+        font-size: 5.5rem;
+        line-height: 5.6rem;
+    }
+    
+    .welcome {
+        margin-top: 20px;
+    }
+    
+    p {
+        font-size: .8rem;
+    }
+    
+    .zoom img {
+        width: 70%;
+    }
+    
+    .zoom {
+        align-items: right;
+        margin-right: 0;
+        float: right;
+    }
+    
+    html, body {
+        cursor: none;
+    }
+
+}
+
+@media screen and (max-width: 1215px) {
+    .animlogo {
+        width: 40%;
+    }
+    
+    .animlogo img {
+        width: 550px;
+    }
+    
+    h2{
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    
+    .welcome {
+        margin-top: 40px;
+    }
+    
+    .zoom img {
+        width: 70%;
+    }
+    
+    .zoom {
+        align-items: right;
+        margin-right: 0;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1407px) {
+    .animlogo {
+        width: 50%;
+        margin: 1%;
+    }
+    
+    .animlogo img {
+        width: 650px;
+    }
+    
+    h2 {
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+    }
+    
+    .zoom img {
+        width: 70%;
+    }
+    
+    .zoom {
+        align-items: right;
+        margin-right: 0;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .animlogo {
+        width: 50%;
+        margin: 1%;
+        margin-top: 0;
+    }
+    
+    .animlogo img {
+        width: 100%;
+    }
+    
+    h2 {
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+    }
+    
+    .welcome {
+        width: 100%;
+    }
+    
+    .zoom img {
+        width: 70%;
+    }
+    
+    .zoom {
+        align-items: right;
+        margin-right: 0;
+        float: right;
+    }
+}

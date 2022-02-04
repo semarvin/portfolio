@@ -1,0 +1,202 @@
+/*WRITTEN BY ELLIE MARVIN*/
+
+/* color scheme
+dark purple: #361134
+bright fuschia: #B0228C
+pink: #EA3788
+coral: #E56B70
+light pink: #F391A0
+light purple: #debffc
+*/
+
+/*div styles*/
+html, body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url("images/baralt.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: #debffc;
+    cursor: url(cursor.png), auto;
+    background-size: 100% 100%;
+}
+
+.head {
+    margin: 5%;
+    transform: skewY(-5deg);
+    margin-top: 10px;
+}
+
+.drag {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  width: 50px;
+  height: 50px;
+}
+
+.horiz {
+    scroll-behavior: smooth;
+    margin-left: 1%;
+    margin-top: 10%;
+    margin-right: 0%;
+    background-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: center;
+    scrollbar-width: thin;
+}
+.block {
+    display: inline-block;
+    flex: 0 0 auto;
+    background-color: #debffc;
+}
+
+/*font styles*/
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3.5rem;
+    line-height: 3.6rem;
+    color: #361134;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #fff;
+}
+
+p a {
+    color: #F391A0;
+    text-decoration: underline;
+    cursor: url(pointer.png), auto;
+}
+
+p a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    cursor: url(pointer.png), auto;
+}
+
+.head a {
+    text-decoration: none;
+    color: #361134;
+    background-color: #B0228C;
+    cursor: url(pointer.png), auto;
+}
+
+.head a:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: #B0228C;
+}
+
+::-moz-selection {
+    color: #361134;
+    background: #EA3788;
+}
+
+::selection {
+    color: #361134;
+    background: #EA3788;
+}
+
+/*img styles*/
+
+.block img {
+    mix-blend-mode: luminosity;
+}
+
+.block img:hover {
+    mix-blend-mode: overlay;
+}
+
+/* SCROLLBAR -- modified from w3schools */
+
+::-webkit-scrollbar {
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+/*media queries*/
+@media screen and (max-width: 480px) {
+    p {
+        font-size: .6rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    
+    html, body {
+        cursor: none;
+    }
+    
+    .block img {
+        opacity: 0.55;
+        filter: grayscale(100%) contrast(300%) brightness(100%);
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    p {
+        font-size: .9rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    
+    html, body {
+        cursor: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {   
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    
+    html, body {
+        cursor: none;
+    }
+
+}
+
+@media screen and (max-width: 1215px) {    
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 1407px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+}

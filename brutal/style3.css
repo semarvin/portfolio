@@ -1,0 +1,390 @@
+/*WRITTEN BY ELLIE MARVIN*/
+
+/* color scheme
+dark purple: #361134
+bright fuschia: #B0228C
+pink: #EA3788
+coral: #E56B70
+light pink: #F391A0
+light purple: #debffc
+*/
+
+/*div styles*/
+html, body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url("images/bar.png");
+    background-repeat: no-repeat;
+    background-color: #F391A0;
+    cursor: url(cursor.png), auto;
+}
+
+.animlogo {
+    float: left;
+    background-color: #debffc;
+    width: 80%;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+.header {
+    float: right;
+    margin: 0;
+    margin-top: 110px;
+    margin-right: 42%;
+    transform: skewY(-20deg);
+    z-index: 100;
+}
+
+.mainimg {
+    float: right;
+    margin: 3%;
+}
+
+.mainimgalt {
+    float: right;
+    margin: 7.5%;
+}
+
+.foot {
+    position: absolute;
+    bottom: 5px;
+    margin-top: 10px;
+    float: right;
+}
+
+#drag {
+    position: absolute;
+    z-index: 9;
+}
+
+.thumbs {
+    display: inline-block;
+    float: right;
+    margin-left: 40%;
+}
+
+/*font styles*/
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: #361134;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Press Start 2P', display;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-right: 4%;
+    float: right;
+    color: #fff;
+}
+
+.flash {
+    animation:blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+    0%{     color: #F391A0;    }
+    49%{    color: #F391A0; }
+    60%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: #F391A0;    }
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #361134;
+    margin: 30px;
+    padding-left: 30px;
+}
+
+p a {
+    color: #F391A0;
+    text-decoration: underline;
+    background-color: #fff;
+    cursor: url(pointer.png), auto;
+}
+
+p a:hover {
+    text-decoration: none;
+    color: black;
+    cursor: url(pointer.png), auto;
+}
+
+#header p {
+    margin: 0;
+    color: #fff;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    text-align: left;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: url(pointer.png), auto;
+}
+
+a:hover {
+    cursor: url(pointer.png), auto;
+}
+
+.foot a:hover {
+    color: #B0228C;
+    text-decoration: linethrough;
+}
+
+::-moz-selection {
+    color: #361134;
+    background: #EA3788;
+}
+
+::selection {
+    color: #361134;
+    background: #EA3788;
+}
+
+/*img styles*/
+.bigimg {
+    background-color: #F391A0;
+}
+
+.img01 {
+    width: 15%;
+}
+
+.img02 {
+    width: 15%;
+    margin: 7%;
+}
+
+.img03 {
+    width: 15%;
+    margin: 2%;
+}
+
+.animlogo img {
+    float: left;
+}
+
+/* SCROLLBAR -- modified from w3schools */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #361134; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EA3788; 
+}
+
+/*media queries*/
+@media screen and (max-width: 480px) {
+ html, body {
+        margin-top: 0;
+        display: block;
+        height: 100%;
+        background-color: #F391A0;
+        cursor: none;
+    }
+    
+    .foot h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+        color: #EA3788;
+        text-align: center;
+    }
+    
+    .header {
+        margin-top: 0;
+    }
+    
+    .animlogo img {
+        width: 70%;
+    }
+    
+    .foot {
+        position: fixed;
+        bottom: 5px;
+        margin-top: 10px;
+    }
+    
+    .welcome {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        margin-top: 0;
+        display: block;
+        height: 100%;
+        background-color: #F391A0;
+        cursor: none;
+    }
+    
+    .foot h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+        color: #EA3788;
+        text-align: center;
+    }
+    
+    .header {
+        margin-top: 0;
+    }
+    
+    .animlogo img {
+        width: 70%;
+    }
+    
+    .foot {
+        position: fixed;
+        bottom: 5px;
+    }
+    
+    .welcome {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    html, body {
+        margin-top: 0;
+        display: block;
+        height: 100%;
+    }
+    
+    .foot h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+        text-align: center;
+    }
+    
+    .header {
+        margin-top: 0;
+    }
+    
+    .animlogo img {
+        width: 70%;
+        margin-top: 10%;
+    }
+    
+    .foot {
+        position: fixed;
+        bottom: 0px;
+        margin-left: 60%;
+    }
+    
+    .welcome {
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 1215px) {
+    html, body {
+        margin-top: 0;
+        display: block;
+        height: 100%;
+    }
+    
+    .foot h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+        text-align: center;
+    }
+    
+    .header {
+        margin-top: 0;
+    }
+    
+    .animlogo img {
+        width: 70%;
+        margin-top: 10%;
+    }
+    
+    .foot {
+        position: fixed;
+        bottom: 0px;
+        margin-left: 60%;
+    }
+    
+    .welcome {
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 1407px) {
+    html, body {
+        margin-top: 0px;
+        height: 100%;
+    }
+    
+    .foot h2 {
+        font-size: 6rem;
+        line-height: 6rem;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    .animlogo img {
+        width: 10%;
+        margin-top: 10%;
+    }
+    
+    .foot {
+        position: fixed;
+        bottom: 0px;
+        margin-left: 60%;
+    }
+    
+    .welcome {
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .animlogo {
+        width: 50%;
+        margin: 1%;
+        margin-top: 0;
+    }
+    
+    .animlogo img {
+        width: 100%;
+    }
+    
+    h2 {
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+    }
+    
+    .welcome {
+        width: 100%;
+    }
+    
+    .zoom img {
+        width: 70%;
+    }
+    
+    .zoom {
+        align-items: right;
+        margin-right: 0;
+        float: right;
+    }
+}

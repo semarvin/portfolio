@@ -1,0 +1,340 @@
+/*WRITTEN BY ELLIE MARVIN*/
+
+/* color scheme
+dark purple: #361134
+bright fuschia: #B0228C
+pink: #EA3788
+coral: #E56B70
+light pink: #F391A0
+light purple: #debffc
+*/
+
+/*div styles*/
+html, body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url("images/baralt.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #debffc;
+    cursor: url(cursor.png), auto;
+}
+
+.head {
+    margin: 5%;
+    transform: skewY(-5deg);
+    margin-top: 10px;
+}
+
+.thumbs {
+    margin-left: 7%;
+}
+
+/*font styles*/
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3.5rem;
+    line-height: 3.6rem;
+    color: #361134;
+}
+
+h2 {
+    font-family: 'Nosifer', display;
+    font-size: 7.5rem;
+    line-height: 8.4rem;
+    text-align: center;
+}
+
+.flash {
+    animation:blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+    0%{     color: #EA3788;    }
+    49%{    color: #EA3788; }
+    60%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: #EA3788;    }
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #fff;
+}
+
+p a {
+    color: #F391A0;
+    text-decoration: underline;
+    cursor: url(pointer.png), auto;
+}
+
+p a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    cursor: url(pointer.png), auto;
+}
+
+a {
+    text-decoration: none;
+    color: #361134;
+    background-color: #B0228C;
+    cursor: url(pointer.png), auto;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: #B0228C;
+}
+
+::-moz-selection {
+    color: #361134;
+    background: #EA3788;
+}
+
+::selection {
+    color: #361134;
+    background: #EA3788;
+}
+
+/*img styles*/
+
+.thumbs img {
+    vertical-align: middle;
+}
+
+.thumb {
+    width: 8%;
+    height: auto;
+    background-color: #DA70D6;
+    border: 2px solid #DA70D6;
+}
+
+.thumb2 {
+    width: 15%;
+    height: auto;
+    background-color: #DA70D6;
+    border: 2px solid #DA70D6;
+}
+
+.thumb3 {
+    width: 8%;
+    height: auto;
+    background-color: #DA70D6;
+    border: 2px solid #DA70D6;
+}
+
+
+/*thumbnail hover -- modified from http://www.dynamicdrive.com/style/csslibrary/item/css-popup-image-viewer/ */
+.thumbnail {
+    position: relative;
+    z-index: 0;
+    height: auto;
+}
+
+.thumbnail:hover {
+    background-color: transparent;
+    z-index: 50;
+}
+
+.thumbnail span { 
+    position: absolute;
+    padding: 5px;
+    left: -1000px;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+}
+
+.thumbnail span img { 
+    border-width: 0;
+    padding: 2px;
+    background-color: #B0228C;
+}
+
+.thumbnail:hover span { 
+    visibility: visible;
+    top: 0;
+    left: 60px; 
+}
+
+.bigthumb {
+    width: 400px;
+}
+
+.bigthumb2 {
+    width: 700px;
+}
+
+/* SCROLLBAR -- modified from w3schools */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #361134; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EA3788; 
+}
+
+/*media queries*/
+@media screen and (max-width: 480px) {
+    p {
+        font-size: .6rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    
+    .thumb {
+        width: 10%;
+        height: auto;
+    }
+    
+    .thumb2 {
+        width: 20%;
+        height: auto;
+    }
+    
+    .thumb3 {
+        width: 10%;
+        height: auto;
+    }
+    
+    html, body {
+        cursor: none;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    p {
+        font-size: .9rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    
+    .thumb {
+        width: 10%;
+        height: auto;
+    }
+    
+    .thumb2 {
+        width: 20%;
+        height: auto;
+    }
+    
+    .thumb3 {
+        width: 10%;
+        height: auto;
+    }
+    
+    html, body {
+        cursor: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {   
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    
+    .thumb {
+        width: 10%;
+        height: auto;
+    }
+    
+    .thumb2 {
+        width: 20%;
+        height: auto;
+    }
+    
+    .thumb3 {
+        width: 10%;
+        height: auto;
+    }
+    
+    html, body {
+        cursor: none;
+    }
+
+}
+
+@media screen and (max-width: 1215px) {    
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    
+    .thumb {
+        width: 10%;
+        height: auto;
+    }
+    
+    .thumb2 {
+        width: 20%;
+        height: auto;
+    }
+    
+    .thumb3 {
+        width: 10%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1407px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    
+    .thumb {
+        width: 10%;
+        height: auto;
+    }
+    
+    .thumb2 {
+        width: 20%;
+        height: auto;
+    }
+    
+    .thumb3 {
+        width: 10%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    
+    .thumb {
+        width: 10%;
+        height: auto;
+    }
+    
+    .thumb2 {
+        width: 20%;
+        height: auto;
+    }
+    
+    .thumb3 {
+        width: 10%;
+        height: auto;
+    }
+}
