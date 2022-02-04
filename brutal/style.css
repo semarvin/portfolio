@@ -70,6 +70,13 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: 'Press Start 2P', display;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
 .flash {
     animation:blinkingText 1.2s infinite;
 }
