@@ -1,0 +1,490 @@
+/*WRITTEN BY ELLIE MARVIN*/
+
+/* color scheme
+MAIN GOLD SHADE: #ecbb4e MAIN GRAY: #ddd;
+VARIOUS GOLDS: #91720F (dark), #F8CA34 (gold), f5d07e (light)
+*/
+
+/*div styles*/
+html, body {
+    background-image: url("images/bar.png");
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+div.body {
+    align-items: center;
+    clear: left;
+    text-align: center;
+    margin: 3%;
+    margin-top: 0;
+}
+
+div.body2 {
+    align-items: center;
+    clear: left;
+    margin: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.body3 {
+    clear: left;
+    margin: 20%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.nav {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    margin: 8px;
+    margin-left: 0px;
+    background-color: #ecbb4e;
+    margin-top: 0;
+    z-index: 1;
+}
+
+div.navw {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    margin: 8px;
+    margin-left: 0px;
+    background-color: #ddd;
+    margin-top: 0;
+    z-index: 1;
+}
+
+div.header {
+    width: 100%;
+    height: 100%;
+}
+
+div.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+div.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 480px) {
+    div.column2 {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        line-height: 1rem;
+    }
+    
+    h3 {
+        font-size: .4rem;
+    }
+}
+
+/*font styles*/
+h1 {
+    font-size: 4rem;
+    color: #000;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 0rem;
+    /*margin-top: 60px;*/
+    letter-spacing: 0rem;
+    /*text-shadow: 3px 2px #ddd;*/
+    animation-duration: 2.6s;
+    animation-name: fadeAndScale;
+    animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #000;
+    font-size: 2rem;
+    letter-spacing: 0rem;
+}
+
+h3 /*NAV*/ {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    line-height: 10px;
+}
+
+h4 /*FOOTER*/ {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7rem;
+}
+
+h5 /*SUBHEADER*/ {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1.4rem;
+    letter-spacing: 0rem;
+    line-height: .6rem;
+}
+
+h6 /*SUB-SUBHEADER*/ {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1.6rem;
+    letter-spacing: 0rem;
+    line-height: 0rem;
+    margin: 0;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #000;
+}
+
+span /*FOR INLINE NAV*/ {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 10px;
+}
+
+a {
+    color: #91720F;
+    text-decoration: none;
+    background-color: #f5d07e;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+    background-color: white;
+}
+
+a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+.nav a {
+    padding: 30px;
+    color: black;
+    text-decoration: none;
+    background-color: #ecbb4e;
+}
+
+.nav a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #ecbb4e;
+}
+
+.navw a {
+    padding: 30px;
+    color: black;
+    text-decoration: none;
+    background-color: #ddd;
+}
+
+.navw a:hover {
+    color: #ecbb4e;
+    text-decoration: none;
+    background-color: #ddd;
+}
+
+
+.column a {
+    color: white;
+    background-color: white;
+}
+
+.column a:hover {
+    color: white;
+    background-color: white;
+}
+
+::-moz-selection {
+    color: #91720F;
+    background: #f5d07e;
+}
+
+::selection {
+    color: #91720F;
+    background: #f5d07e;
+}
+
+.works h2 {
+  display: inline-block;
+}
+
+.works span {
+  margin-left: 40%;
+}
+
+/*image styles*/
+
+img.head {
+    width: 230px;
+    padding-top: 10px;
+}
+
+img.head:hover {
+    background-image: url('images/logo-animated.gif') center top no-repeat;
+}
+
+img.main {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #ddd;
+}
+
+
+img.main {
+    opacity: 0.8;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(1);
+}
+
+img.main:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0);
+}
+
+.click a {
+  text-decoration: none;
+  background-color: white;
+}
+
+.click a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+/*GRID LAYOUT -- modified from w3schools*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  display: -ms-flexbox; 
+  -ms-flex-wrap: wrap; 
+}
+
+.column {
+  flex: 25%;
+  padding: 0 4px;
+  -ms-flex: 25%;
+}
+
+.column img {
+  margin-top: 6px;
+  vertical-align: middle;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*STICKY NAV -- modified from w3schools*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+   padding: 0px; 
+}
+
+.sticky + .content {
+    padding-top: 20px;
+}
+
+/* SCROLLBAR -- modified from w3schools */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #91720F; 
+}
+
+
+/* scroll to top button, modified from getflywheel.com */
+
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: inline-flex;
+   
+ cursor: pointer;
+ align-items: center;
+ justify-content: center;
+ margin: 3em 3em 3em 3em;
+ border-radius: 80%;
+ padding: .25em;
+ width: 50px;
+ height: 50px;
+ background-color: #ddd;
+}
+
+&.show {
+  visibility: visible;
+  opacity: 1;
+}
+ 
+&.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+svg {
+ fill: #000;
+ width: 24px;
+ height: 12px;
+}
+ 
+svg:hover {
+ fill: #ecbb4e;
+}
+
+/*Text meant only for screen readers.*/
+.screen-reader-text {
+    position: absolute;
+    clip-path: inset(50%);
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+    clip: rect(1px, 1px, 1px, 1px);
+ 
+    &:focus {
+        display: block;
+        top: 5px;
+        left: 5px;
+        z-index: 100000; // Above WP toolbar
+        clip-path: none;
+        background-color: #eee;
+        padding: 15px 23px 14px;
+        width: auto;
+        height: auto;
+        text-decoration: none;
+        line-height: normal;
+        color: #444;
+        font-size: 1em;
+        clip: auto !important;
+    }
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 1200px;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* DISCARDED STYLES */
+
+/* this was to make the triangle logo animation float to the left of the header text
+div.header {
+    float: left;
+    width: 50%;
+    align-items: right;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-top: 1.5%;
+}
+
+
+img.head {
+    float: right;
+    width: 300px;
+}
+*/
